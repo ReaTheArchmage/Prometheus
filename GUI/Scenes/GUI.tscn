@@ -1,0 +1,63 @@
+[gd_scene format=3 uid="uid://c3gwdvkvmub7m"]
+
+[ext_resource type="LabelSettings" uid="uid://bi48c3gs8b6o5" path="res://GUI/TitleLabelSettings.tres" id="1_blbsh"]
+[ext_resource type="Script" uid="uid://hf3rep5gbds4" path="res://GUI/Scripts/InventoryGUI.gd" id="1_i6rmv"]
+
+[node name="GUI" type="Control" unique_id=1507223366]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="InvMenu" type="VBoxContainer" parent="." unique_id=400049375]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 1215.0
+grow_horizontal = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="InvMenu" unique_id=911721454]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="InvMenu/HBoxContainer" unique_id=1794551430]
+custom_minimum_size = Vector2(1080, 0)
+layout_mode = 2
+text = "INVENTORY:"
+label_settings = ExtResource("1_blbsh")
+
+[node name="Title2" type="Label" parent="InvMenu/HBoxContainer" unique_id=445661559]
+layout_mode = 2
+text = "EQUIPMENT:"
+label_settings = ExtResource("1_blbsh")
+
+[node name="InvBox" type="HBoxContainer" parent="InvMenu" unique_id=155632469]
+layout_mode = 2
+script = ExtResource("1_i6rmv")
+
+[node name="InvItemList" type="VBoxContainer" parent="InvMenu/InvBox" unique_id=1867603965]
+custom_minimum_size = Vector2(1080, 0)
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="InstTitle" type="Label" parent="InvMenu/InvBox/InvItemList" unique_id=998226685]
+layout_mode = 2
+text = "Instructions:"
+
+[node name="Instructions" type="VBoxContainer" parent="InvMenu/InvBox/InvItemList" unique_id=273379657]
+layout_mode = 2
+
+[node name="WepTitle" type="Label" parent="InvMenu/InvBox/InvItemList" unique_id=1724889039]
+layout_mode = 2
+text = "Weapons:"
+
+[node name="Weapons" type="VBoxContainer" parent="InvMenu/InvBox/InvItemList" unique_id=2042595771]
+layout_mode = 2
+
+[node name="Equipment" type="HBoxContainer" parent="InvMenu/InvBox" unique_id=386658409]
+custom_minimum_size = Vector2(840, 540)
+custom_maximum_size = Vector2(840, -1)
+layout_mode = 2
+theme_override_constants/separation = 8
+alignment = 1

@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://b05slfquyfpvj"]
+
+[ext_resource type="Script" uid="uid://dcsyhg7e57omc" path="res://GUI/Scripts/ItemBoxGUI.gd" id="1_y2yoi"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_3ounf"]
+font_size = 40
+font_color = Color(0, 0, 0, 1)
+
+[node name="ItemBox" type="ColorRect" unique_id=463704129 node_paths=PackedStringArray("label")]
+custom_minimum_size = Vector2(0, 70)
+script = ExtResource("1_y2yoi")
+label = NodePath("Label")
+
+[node name="Label" type="Label" parent="." unique_id=1395316005]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 6.0
+offset_right = 156.0
+offset_bottom = 61.0
+text = "Item name"
+label_settings = SubResource("LabelSettings_3ounf")

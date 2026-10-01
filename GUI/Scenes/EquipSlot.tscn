@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://ji8gui5beydu"]
+
+[ext_resource type="Script" uid="uid://bpsac21ijxd17" path="res://GUI/Scripts/EquipmentSlotGUI.gd" id="1_omcoe"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_3ounf"]
+font_size = 20
+font_color = Color(0, 0, 0, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" unique_id=527802645]
+offset_right = 200.0
+offset_bottom = 200.0
+
+[node name="EquipSlot" type="ColorRect" parent="." unique_id=941589279 node_paths=PackedStringArray("label")]
+custom_minimum_size = Vector2(200, 200)
+custom_maximum_size = Vector2(200, 200)
+layout_mode = 2
+script = ExtResource("1_omcoe")
+label = NodePath("Label")
+
+[node name="Label" type="Label" parent="EquipSlot" unique_id=934457623]
+layout_mode = 0
+offset_right = 200.0
+offset_bottom = 200.0
+text = "Equip an
+Instruction"
+label_settings = SubResource("LabelSettings_3ounf")
+vertical_alignment = 1

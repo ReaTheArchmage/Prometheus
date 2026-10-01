@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://dihjqqt467yws"]
+
+[ext_resource type="Script" uid="uid://bjax01ml1qwmy" path="res://ItemManagement/Equipment.gd" id="1_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://c3gwdvkvmub7m" path="res://GUI/Scenes/GUI.tscn" id="1_h2yge"]
+[ext_resource type="Script" uid="uid://b13n8374epar6" path="res://ItemManagement/ResourceScripts/Weapon.gd" id="3_h2yge"]
+[ext_resource type="Resource" uid="uid://dnqt4h0wc0cbr" path="res://ItemManagement/ResourceScripts/ResourceTemplates/Sword.tres" id="4_1bvp3"]
+[ext_resource type="Script" uid="uid://bnmon0rpd88v0" path="res://ItemManagement/ResourceScripts/Instruction.gd" id="4_lquwl"]
+[ext_resource type="Resource" uid="uid://c2yj5i48jbt1w" path="res://ItemManagement/ResourceScripts/ResourceTemplates/SwiftAttack.tres" id="6_7mycd"]
+[ext_resource type="Resource" uid="uid://if1p02fuap6k" path="res://ItemManagement/ResourceScripts/ResourceTemplates/RotatoryBlades.tres" id="7_272bh"]
+
+[node name="Main" type="Node2D" unique_id=1659566206]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=774250985]
+
+[node name="GUI" parent="CanvasLayer" unique_id=1507223366 instance=ExtResource("1_h2yge")]
+
+[node name="Equipment" type="Node" parent="." unique_id=703908438 groups=["EQUIPMENT"]]
+script = ExtResource("1_0xm2m")
+possessed_weapons = Array[ExtResource("3_h2yge")]([ExtResource("4_1bvp3")])
+possessed_instructions = Array[ExtResource("4_lquwl")]([ExtResource("6_7mycd"), ExtResource("7_272bh")])
+metadata/_custom_type_script = "uid://bjax01ml1qwmy"

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Instruction" format=3 uid="uid://if1p02fuap6k"]
+
+[ext_resource type="Script" uid="uid://bnmon0rpd88v0" path="res://ItemManagement/ResourceScripts/Instruction.gd" id="1_bad7h"]
+[ext_resource type="Script" uid="uid://bq2ceyjo1jn7v" path="res://ItemManagement/ResourceScripts/Item.gd" id="2_t82ks"]
+
+[resource]
+script = ExtResource("1_bad7h")
+item_name = "RotatoryBlades"
+metadata/_custom_type_script = "uid://bnmon0rpd88v0"
