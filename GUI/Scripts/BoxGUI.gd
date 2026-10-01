@@ -14,7 +14,7 @@ func connectMouse()->bool:
 
 func trackSelection(event:InputEvent,lock:bool= false)->void:
 	if is_mouse_on and event.is_action_pressed("select_box"):
-		is_toggled = !is_toggled
+		is_toggled= !is_toggled
 		Pushed.emit(is_toggled)
 		if lock:
 			is_locked= true

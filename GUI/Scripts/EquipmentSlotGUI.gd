@@ -4,8 +4,7 @@ var G= Global
 
 func _input(event:InputEvent)->void:
 	trackSelection(event,true)
-	if not G.selected_items.is_empty() and is_toggled:
-		emitToInv()
+	if not G.selected_items.is_empty() and is_toggled:emitToInv()
 
 func emitToInv():
 		for i in G.selected_items:

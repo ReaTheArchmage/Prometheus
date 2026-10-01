@@ -1,7 +1,8 @@
 class_name Inventory extends Node
 @export var possessed_weapons:Array[Weapon]= []
 @export var possessed_instructions:Array[Instruction]= []
-signal FromInvToEquip(i:Item,index:int)
+@warning_ignore("unused_signal")signal FromInvToEquip(i:Item,index:int)
+
 
 func addItem(item)->void:
 	if item is Instruction:possessed_instructions.append(item)
